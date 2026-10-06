@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MespreX — Control Center</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js"></script>
+</head>
+<body>
+  <aside class="sidebar"><div class="brand"><img src="mesprex-logo.jpg" alt=""><div><b>MESPRE<span>X</span></b><small>CONTROL CENTER</small></div></div><div class="label">WORKSPACE</div><nav><a class="active" href="index.html">▦ &nbsp; Visão geral</a><a href="../bio-site/index.html">◉ &nbsp; Ver bio pública ↗</a></nav><div class="side-bottom"><div class="secure">⌾ <span><b>Área de gestão</b><small>Conteúdo sincronizado</small></span></div><div class="user"><i>MX</i><span><b>Admin MespreX</b><small>owner / online</small></span></div></div></aside>
+  <main class="content"><header><div><small class="crumb">WORKSPACE &nbsp;›&nbsp; PAINÉIS GRÁTIS</small><h1>Controle dos painéis</h1><p>Cadastre o painel, mostre a prévia e libere o acesso para a comunidade.</p></div><div class="head-actions"><b class="pill green">● SYNC ATIVO</b><a class="outline" href="../bio-site/index.html">◉ &nbsp; Ver bio</a></div></header>
+    <div id="notice" class="notice hidden"></div>
+    <section class="stats"><article><i>↗</i><small>LINKS TOTAIS</small><strong id="total">00</strong><span><b id="activeCount">0</b> ativos agora</span></article><article><i class="green-icon">◉</i><small>VISIBILIDADE</small><strong id="visibility">100%</strong><span>todos os acessos públicos</span></article><article class="dark"><i>✦</i><small>IDENTIDADE</small><strong>MESPRE<span>X</span></strong><span>Seu XIT, sua vantagem.</span></article></section>
+    <section class="grid"><article class="card form-card"><div class="heading"><div><small>＋ NOVO ACESSO</small><h2 id="formTitle">Adicionar botão</h2></div><button id="cancel" class="text hidden">× Cancelar</button></div><form id="form"><label>LOGO EM LINK<input id="logoUrl" type="url" placeholder="https://.../logo.png" required></label><label>NOME DO BOTÃO<input id="name" placeholder="Ex.: Minha loja" required></label><label>LINK DE DESTINO<input id="link" type="url" placeholder="https://..." required></label><label>DESCRIÇÃO<textarea id="description" rows="3" placeholder="Explique em uma frase o que a pessoa vai encontrar." required></textarea></label><label>FOTO DE DEMONSTRAÇÃO <em>OPCIONAL</em><input id="demoImageUrl" type="url" placeholder="https://.../preview.jpg"></label><footer><span>✓ Links abrem em nova aba</span><button class="primary" type="submit" id="submit">＋ Criar e publicar</button></footer></form></article><article class="card preview"><div class="heading"><div><small>◉ LIVE PREVIEW</small><h2>Cartão do acesso</h2></div><b class="pill">PREVIEW</b></div><div id="previewBox" class="preview-box"><div class="preview-empty">▧<b>Prévia em tempo real</b><span>Preencha os campos para visualizar seu cartão.</span></div></div><p class="preview-note">✦ Seu público verá este visual na bio pública.</p></article></section>
+    <section class="card table-card"><div class="heading table-heading"><div><small>ϟ CONTEÚDO PUBLICADO</small><h2>Seus botões <em id="totalBadge">0</em></h2></div><input id="search" class="search" placeholder="⌕  Buscar acesso..."></div><div class="table-head"><span>ACESSO</span><span>DESCRIÇÃO</span><span>STATUS</span><span>AÇÕES</span></div><div id="rows"></div></section>
+    <footer class="footer"><span>MESPREX CONTROL CENTER / v1.0</span><span>♧ Precisa de ajuda? Fale com o suporte.</span></footer>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
